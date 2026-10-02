@@ -1,0 +1,13 @@
+<!DOCTYPE html><html lang="az"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Hava təmizliyi sistemi: bağlantılar</title><link rel="stylesheet" href="style.css"></head><body>
+<header><h1>Hava təmizliyi sistemi</h1><p>NodeMCU (ESP8266), DHT22 və MQ-4 üçün bütün bağlantılar, bölücü hesabı və PCB yığım siyahısı.</p></header>
+<main>
+<section><h2>Bağlantı sxemi</h2><svg id="d" viewBox="0 0 900 500" role="img" aria-label="Bağlantı sxemi"></svg><p class="hint">Xəttə və ya cədvəldəki sətrə kliklə: həmin net seçilir, qalanları solğunlaşır.</p></section>
+<section><h2>Net cədvəli</h2><table id="nt"></table></section>
+<section><h2>Gərginlik bölücüsü hesabı</h2><div class="cal">
+<label class="f">R1 (kΩ)<input id="r1" type="number" value="10" min="1"></label>
+<label class="f">R2 (kΩ)<input id="r2" type="number" value="20" min="1"></label>
+<label class="f">AO maks. (V)<input id="vao" type="number" value="5" step="0.1"></label>
+<div>A0-a gedən maks.: <div id="out"></div></div></div><p id="msg"></p></section>
+<section><h2>PCB yığım siyahısı</h2><ul id="cl"></ul></section>
+<section><h2>Komponent siyahısı</h2><table id="bom"></table></section>
+</main><script src="data.js"></script><script src="app.js"></script></body></html>
